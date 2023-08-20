@@ -1,136 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <!--font awesome file link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <!--custom css file link-->
-    <link rel="stylesheet" href="style.css">
+    <title>Anisha - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <STYle>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover,
+        .footer-second ul a:hover {
+            color: #ee0abb;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            margin: 110px 6rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+        }
+
+        .rightsection img {
+            width: 25rem;
+            margin: 50px 0;
+        }
+
+        .name {
+            color: #ee0abb;
+        }
+
+        #element {
+            color: #ee0abb;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto 13rem;
+        }
+
+        .secondsection h1,
+        .thirdsection h1 {
+            color: #ee0abb;
+            font-weight: bold;
+            padding-bottom: 10px;
+            font-size: 2.5rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .box {
+            display: flex;
+            border-top: solid white;
+        }
+
+        .vertical {
+            height: 90px;
+            width: 1px;
+            background-color: white;
+            margin: 0px 10rem;
+        }
+
+        .text {
+            position: relative;
+            padding: 10px;
+            top: 90px;
+            left: -101px;
+            text-align: center;
+            border: solid white;
+            width: 13rem;
+        }
+
+        .thirdsection {
+            position: relative;
+            top: 12rem;
+            max-width: 80vw;
+            margin: auto 13rem;
+        }
+
+        .skill-img {
+            width: 2rem;
+            position: relative;
+            bottom: 2.8rem;
+            left: -1rem;
+            width: 2rem;
+        }
+
+        .skill-text p {
+            position: relative;
+            top: 2rem;
+            left: -3.4rem;
+            border: solid;
+            width: 5rem;
+            text-align: center;
+            background-color: white;
+            color: black;
+            padding: 10px;
+            margin: 0px;
+            border-radius: 15px;
+        }
+
+        .v1 {
+            margin: 0px 7rem;
+        }
+
+        .thirdsection h1 {
+            padding-bottom: 4rem;
+        }
+
+        .htjs {
+            bottom: 2rem;
+        }
+
+        .cpp {
+            bottom: 2.4rem;
+        }
+
+        .c {
+            bottom: 2.2rem;
+        }
+
+        #secondsection {
+            height: 45rem;
+        }
+
+        footer {
+            background-color: #2e2945;
+            height: 100px;
+        }
+
+        .footer {
+            display: flex;
+            margin: 23px 122px;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+
+        .footer ul {
+            list-style: none;
+
+        }
+
+        .footer>div {
+            width: 35rem;
+        }
+
+        .Contact {
+            display: flex;
+            JUSTIFY-CONTENT: space-evenly;
+            gap: 7rem;
+        }
+
+        .contact-img {
+            width: 60px;
+        }
+
+        .footer-second ul {
+            display: flex;
+            flex-direction: column;
+            margin: 13px 0px;
+        }
+
+        .footer-second ul a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            margin: auto;
+        }
+
+        .footer-first {
+            margin: auto 0px;
+            font-size: 1.3rem;
+        }
+
+        .download button a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .download button {
+            background-color: white;
+            padding: 1rem 2rem;
+            margin: 1rem 1rem;
+            border: solid 4px;
+            border-radius: 20px;
+        }
+    </STYle>
 </head>
+
 <body>
-    
-<!--head section start-->
+    <header>
+        <nav>
+            <div class="left">
+                Anisha's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#secondsection">About</a></li>
+                    <li><a href="#Contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi! My Name Is <span class="name">Anisha</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="download">
+                    <button><a href="#Contact">Contact Us</a></button>
+                    <button><a href="anisha majhi cv.pdf">Resume</a></button>
+                </div>
 
-<header>
-    <div class="user">
-        <img src="40d5ada6-60fd-4e8f-ac14-fd7bdf3f738f.jpg" alt="">
-        <h3 class="name">Anisha Majhi</h3>
-        <p class="post">Front End Developer</p>
-    </div>
-
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#education">education</a></li>
-            <li><a href="#contact">contact</a></li>
-        </ul>
-    </nav>
-</header>
-<!--head section ends-->
-<div id="menu" class="fas fa-bars"></div>
-
-
-<!--home section starts-->
-<section class="home" id="home">
-    <h3>HI THERE !</h3>
-    <h1>I'M <span>Anisha Majhi</span></h1>
-    <p>I'm a front-end web developer focused on clean and user friendly experiences.I am passionate about building excellent websites that inproves the lives of those around me.</p>
-    <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
-</section>
-<!--home section ends-->
-
-
-<!--about section starts-->
-<section class="about" id="about">
-    <h1 class="heading"><span>about</span> me </h1>
-    <div class="row">
-        <div class="info">
-            <h3><span> Name : </span> Anisha Majhi </h3>
-            <h3><span> Age : </span> 19 </h3>
-            <h3><span> Qualification : </span> Higher Secondary </h3>
-            <h3><span> Language : </span> Bengali </h3>
-            <a href="#"><button class="btn"> Download CV <i class="fas fa-download"></i></button></a>
+            </div>
+            <div class="rightsection">
+                <img src="images.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+        <div id="secondsection">
+            <section class="secondsection">
+                <h1>Education</h1>
+                <div class="box">
+                    <div class="vertical">
+                        <div class="text">
+                            Government College of Engineering & Leather Technology (2021-2025)
+                            <p>Btach in Computer Science and Enginnering</p>
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <div class="text">Government College of Engineering & Leather Technology
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="thirdsection">
+                <h1>Skills</h1>
+                <div class="box">
+                    <div class="vertical v1">
+                        <div class="skill-text">
+                            <img src="c.png" alt="" class="skill-img c">
+                            <p>C</p>
+                        </div>
+                    </div>
+                    <div class="vertical v1">
+                        <div class="skill-text">
+                            <img src="c++.png" alt="" class="skill-img cpp">
+                            <p>C++</p>
+                        </div>
+                    </div>
+                    <div class="vertical v1">
+                        <div class="skill-text">
+                            <img src="css.png" class="skill-img">
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                    <div class="vertical v1">
+                        <div class="skill-text">
+                            <img src="html.png" alt="" class="skill-img htjs">
+                            <p>HTML</p>
+                        </div>
+                    </div>
+                    <div class="vertical v1">
+                        <div class="skill-text">
+                            <img src="js.jpg" alt="" class="skill-img htjs">
+                            <p>JAVA SCRIPT</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="chart">
-            <h3>My <span>Skill</span></h3>
-            <img class="code" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png" alt="c" height="50px">
-            <div class="c"><div class="b0"></div></div>
-            <img class="code" src="https://w7.pngwing.com/pngs/46/626/png-transparent-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template-blue.png" alt="c" height="50px">
-            <div class="c"><div class="b0"></div></div>
-            <img class="code" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="css" height="50px">
-            <div class="c"><div class="b1"></div></div>
-            <img class="code" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpngGRjYX1ca7qAADU3K6eGLj7ShQE3L2otdzfryl_Y9Ht2QRoQKYQbsXd36XIxMbYOw0&amp;usqp=CAU" alt="html" height="50px">
-            <div class="c"><div class="b2"></div></div>
-            <img class="code" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="PYTHON" height="50px">
-            <div class="c"><div class="b3"></div></div>
-             </div>
-    </div>
-    <div class="account">
-        <h2>My Coding Account</h2>
-        <div class="acc">
-        <a href="https://www.codechef.com/users/anisha2004" target="_main"><img src="https://cdn-1.webcatalog.io/catalog/codechef/codechef-icon-filled.png" alt="CODECHEF" width="60rem"></a>
-        <a href="https://www.hackerrank.com/anishamajhi10" target="_main"><img src="https://w7.pngwing.com/pngs/118/895/png-transparent-hackerrank-logos-and-brands-line-filled-icon.png" alt="hackerrank" width="60rem"></a>
-        <a href="https://leetcode.com/Anisha_Majhi/" target="_main"><img src="https://styles.redditmedia.com/t5_3mlga/styles/communityIcon_81fgdqfsnbw91.png" alt="leetcode" width="60rem"></a>
-    </div></div>
-</section>
-<!--about section ends-->
-
-
-<!--education section starts-->
-<section class="education" id="education">
-    <h1 class="heading">My <span>Education</span> </h1>
-    <div class="box-container">
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span>2010-2021</span>
-            <a href="https://schools.org.in/north-twenty-four-pargana/19114201604/dum-dum-baidyanath-institution-for-girls.html" target="_main""><h3>Dum Dum Baidyanath Institution For Girls(H.S)</h3></a>
+        <div class="Contact" id="Contact">
+            <a href="https://www.linkedin.com/in/anisha-majhi-568719288/" target="_blank"><img src="linkdin.png"
+                    alt="linkdin" class="contact-img"></a>
+            <a href="mailto:anishamajhi327@gmail.com"><img src="gmail.png" alt="gmail" class="contact-img"></a>
         </div>
-
-        <div class="box">
-            <i class="fas fa-graduation-cap"></i>
-            <span>2021-2025</span>
-            <a href="https://gcelt.gov.in/" target="_main"><h3>Government College of Engineering and Leather Technology</h3></a>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">Anisha's Developer Portfolio</div>
+            <div class="footer-second">
+                <ul>
+                    <a href="index.html">Home</a>
+                    <a href="#secondsection">About</a>
+                    <a href="#Contact">Contact</a>
+                </ul>
+            </div>
         </div>
-    </div>
-</section>
-<!--education section ends-->
-
-
-<!--contact section starts-->
-<section class="contact" id="contact">
-<h1 class="heading"><span>Contact</span> Me </h1>
-<div class="row">
-    <div class="contect">
-        <h3 class="title">Contact Me On</h3>
-        <div class="info">
-            <a href="mailto:anishamajhi10@gmail.com" target="_main"><img class="img2" src="https://fonts.gstatic.com/s/i/productlogos/gmail_2020q4/v10/192px.svg" alt="email" height="50px"></a>
-            <a href="https://www.facebook.com/profile.php?id=100076517217294" target="_main"><img class="img2" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/640px-Facebook_f_logo_%282021%29.svg.png" alt="facebook" height="50px"></a>
-            <a href="https://www.instagram.com/pure_artistic_day/" target="_main"><img class="img2" src="https://pbs.twimg.com/profile_images/1526231349354303489/3Bg-2ZsT_400x400.jpg" alt="instagram" height="50px"></a>
-        </div>
-    </div>
-    <from>
-            <input type="text" placeholder="Name" class="box">
-            <input type="email" placeholder="Email" class="box">
-            <input type="text" placeholder="Project" class="box">
-            <textarea name="" id="" class="box massage" rows="10" cols="30" placeholder="Massage"></textarea>
-            <button type="submit" class="btn">send <i class="fas fa-paper-plane"></i></button>
-    </from>
-</div>
-</section>
-<!--contact section ends-->
-
-
-
-
-<!--jquery cdn link-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-
-<!--custom js file link-->
-<script src="script.js"></script>
-
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Content Writer', 'Web Designer'],
+            typeSpeed: 80,
+        });
+    </script>
 </body>
+
 </html>
